@@ -17,6 +17,7 @@ dotenv_1.default.config();
 // import tokenMetaDataRoutes from "./routes/mutableLayer";
 // // import verifyTrxRoutes from './routes/verifyTrx.js';
 const characters_route_1 = __importDefault(require("./characters/characters.route"));
+const geofencing_route_1 = __importDefault(require("./geofencing/geofencing.route"));
 // import attributesRoutes from "./routes/attributes";
 // import statisticsRoutes from "./routes/statistics";
 // import summoningRoutes from "./routes/summoning";
@@ -46,6 +47,7 @@ app.get("/", (req, res) => {
 // app.use("/api/tokenmetadata", tokenMetaDataRoutes);
 // // app.use('/api/verify', verifyTrxRoutes);
 app.use("/api/characters", characters_route_1.default);
+app.use("/api/geofences", geofencing_route_1.default);
 // app.use("/api/attributes", attributesRoutes);
 // app.use("/api/statistics", statisticsRoutes);
 // app.use("/api/summoning", summoningRoutes);

@@ -11,4 +11,12 @@ interface ICharacterAttrs {
   totalNft: number;
 }
 
-export { ICharacterAttrs };
+// interface representing a Geofence document in MongoDB.
+interface IGeofenceAttrs {
+  name: string;
+  latitude: number;
+  longitude: number;
+  radius: number;
+}
+
+export { ICharacterAttrs, IGeofenceAttrs };
